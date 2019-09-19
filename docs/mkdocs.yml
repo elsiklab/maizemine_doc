@@ -1,0 +1,4 @@
+site_name: MaizeMine
+repo_url: https://github.com/elsiklab/maizemine
+pages:
+- ['index.md', 'Introduction']
