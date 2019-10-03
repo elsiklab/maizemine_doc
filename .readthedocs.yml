@@ -12,6 +12,7 @@ mkdocs:
  configuration: docs/mkdocs.yml
 
 # Optionally build your docs in additional formats such as PDF and ePub
-formats: 
-  - PDF
-  - ePub
+formats:
+  - htmlzip
+  - pdf
+  - epub
