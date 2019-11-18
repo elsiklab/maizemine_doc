@@ -236,7 +236,7 @@ This page also provides users with widgets (listed below) to perform analyses on
 
 MyMine serves as a password-protected portal for users to manage their lists, queries, templates, and account details.  It is strongly suggested that MaizeMine users establish a MyMine account as this allows users to save lists from session to session.  Without a MyMine account, MaizeMine deletes lists after each session.
 
-![MyMine Page](./images/fig32_mymine "My Mine Page")
+![MyMine Page](./images/fig32_mymine.png "My Mine Page")
 
 1. Lists – lists saved by the user.
 2. History–a list of most recent queries performed by the user.
