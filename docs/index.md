@@ -36,7 +36,7 @@ There are several different ways for users to query MaizeMine.
 
 **Quick Search**
 
-The ‘Quick Search’ enables users to search keywords from any of the datasets in MaizeMine. The Quick Search box is on the main page and on the upper-right hand corner of each page.  Users can input their gene name, gene identifiers or keywords and search MaizeMine. The wildcard character ‘*’ can be used to get all results that matches the query. As an example, enter ‘GR2b’ in the search box and click ‘Search’.
+The "Quick Search" enables users to search keywords from any of the datasets in MaizeMine. The Quick Search box is on the main page and on the upper-right hand corner of each page.  Users can input their gene name, gene identifiers or keywords and search MaizeMine. The wildcard character "*" can be used to get all results that matches the query. As an example, enter "GR2b" in the search box and click "Search".
 
 ![Quick Search](./images/fig2_quick_search.png "Quick Search")
 
@@ -44,31 +44,31 @@ The results page is tabulated below and shows a summary of the query.
 
 ![Search Results](./images/fig3_Quick_Serach_bz1_results.png "Search Results")
 
-The results may be filtered based on ‘Category’ or ‘Organism’ (red box). The score column in the result table indicates the similarity of the query to the result fetched by MaizeMine.
+The results may be filtered based on "Category" or "Organism" (red box). The score column in the result table indicates the similarity of the query to the result fetched by MaizeMine.
 
-The results page can also be converted to a list. To enable this feature click on ‘Gene’ in ‘Hits by Category’ section marked with a red box.
+The results page can also be converted to a list. To enable this feature click on "Gene" in "Hits by Category" section marked with a red box.
 
 ![Hits by "Gene"](./images/fig4_quick_search_bz1_results_bygene.png "Hits by \"Gene\"")
 
-This will filter the results for the feature type ‘Gene’ and checkboxes will be available for users to select genes they would like to add to their list. Note the red arrow, which denotes that the category has been restricted to the “Gene” search results.  Once the genes are selected, click on “CREATE LIST” denoted by the red box. List features will be described later.
+This will filter the results for the feature type "Gene" and checkboxes will be available for users to select genes they would like to add to their list. Note the red arrow, which denotes that the category has been restricted to the "Gene" search results.  Once the genes are selected, click on "CREATE LIST" denoted by the red box. List features will be described later.
 
 **Templates**
 
-In addition to the Quick Search box, users can make use of templates which are pre-constructed queries developed using the “QueryBuilder” which will be covered later.  Templates can be accessed by clicking on the “Templates” menu tab or by accessing the “popular templates” section near the bottom of the page where templates are organized by type.  The Templates page provides a list of templates that users may choose from based on the nature of their query.  Below are two examples using the Templates feature of MaizeMine.  
+In addition to the Quick Search box, users can make use of templates which are pre-constructed queries developed using the "QueryBuilder" which will be covered later.  Templates can be accessed by clicking on the "Templates" menu tab or by accessing the "popular templates" section near the bottom of the page where templates are organized by type.  The Templates page provides a list of templates that users may choose from based on the nature of their query.  Below are two examples using the Templates feature of MaizeMine.  
 
 **1. Retrieving Gene Expression Values for a Gene**
-To utilize this template, which is shown in the figure below, users only need to enter the gene model name (DB identifier) for their gene of interest and click the “Show Results” button.  In addition to information on gene expression, detailed information will be returned on the sample growth stage, organ group, and plant ontology (PO) terms.
+To utilize this template, which is shown in the figure below, users only need to enter the gene model name (DB identifier) for their gene of interest and click the "Show Results" button.  In addition to information on gene expression, detailed information will be returned on the sample growth stage, organ group, and plant ontology (PO) terms.
 
 ![Gene Expression Search](./images/fig5_gene_expression_template.png "Gene Expression Search")
-The result page returns gene expression values in FPKP for 91 tissues. The layout of the results table may be customized by clicking on ‘Manage Columns’ (Box 1). Users may generate the code for the query in Perl, Python, Java, Ruby, JavaScript or XML (Box 2). The search results can be downloaded by clicking on “Export” (Box 3). The format options for the results download file are tab-separated (.tsv), comma-separated values (.csv), XML, or JSON.  Additionally, if the results are genomic features, then the results can be downloaded in GFF3 and BED format as well.
+The result page returns gene expression values in FPKP for 91 tissues. The layout of the results table may be customized by clicking on "Manage Columns" (Box 1). Users may generate the code for the query in Perl, Python, Java, Ruby, JavaScript or XML (Box 2). The search results can be downloaded by clicking on "Export" (Box 3). The format options for the results download file are tab-separated (.tsv), comma-separated values (.csv), XML, or JSON.  Additionally, if the results are genomic features, then the results can be downloaded in GFF3 and BED format as well.
 
 ![Gene Expression Search Results](./images/fig6_gene_expression_template_results.png "Gene Expression Search Results")
 
 **2.  Retrieving Gene Ontology (GO) Terms for a Gene**
-Given a maize gene symbol or gene ID, Gene Ontology terms can be obtained using the “Gene to GO Terms” template.  The gene id Zm00001eb105010 is pre-filled in the text box as an example.  It is worth noting that any template may be edited using the “Edit Query” feature (red box) that allows customization of a template to meet specific user needs.  As users gain experience with the QueryBuilder, modifying a preexisting template may be a good alternative to building a query de novo.
+Given a maize gene symbol or gene ID, Gene Ontology terms can be obtained using the "Gene to GO Terms" template.  The gene id Zm00001eb105010 is pre-filled in the text box as an example.  It is worth noting that any template may be edited using the "Edit Query" feature (red box) that allows customization of a template to meet specific user needs.  As users gain experience with the QueryBuilder, modifying a preexisting template may be a good alternative to building a query de novo.
 
 ![Searching for GO Terms Attached to a Gene](./images/fig7_gene_go_terms_template.png "Searching for GO Terms Attached to a Gene")
-After clicking "Show Results", a table is delivered below with the GO term identifiers, names, and descriptions.  Using the “Manage Columns” feature (red box #1), it is possible to re-arrange, remove, or even add columns to the table.  Using the “Manage Filters” button (red box #2) it is possible to edit of remove active filters and change the constraint logic applied within a template.  Each column in a table may be sorted, removed, or hidden.  Particularly useful is the “view column summary” feature represented by the small bar graph icon (red box #3).  Clicking on this icon allows viewing of the number, name, and counts of the types of entries within a column.
+After clicking "Show Results", a table is delivered below with the GO term identifiers, names, and descriptions.  Using the "Manage Columns" feature (red box #1), it is possible to re-arrange, remove, or even add columns to the table.  Using the "Manage Filters" button (red box #2) it is possible to edit of remove active filters and change the constraint logic applied within a template.  Each column in a table may be sorted, removed, or hidden.  Particularly useful is the "view column summary" feature represented by the small bar graph icon (red box #3).  Clicking on this icon allows viewing of the number, name, and counts of the types of entries within a column.
 
 ![GO Search Results](./images/fig8_gene_goterms_template_results.png "GO Search Results")
 
@@ -78,29 +78,29 @@ While the templates provided are suitable for many different types of searches, 
 
 Three scenarios for using the QueryBuilder are described below.
 
-Each example begins by selecting “Gene” as the Data Type (red arrow #1) in the QueryBuilder start page as shown in the figure below. 
+Each example begins by selecting "Gene" as the Data Type (red arrow #1) in the QueryBuilder start page as shown in the figure below. 
 
 ![Start Page for Query Builder](./images/fig9_querybuilder_startpage.png "Start Page for Query Builder")
 
-After clicking ‘Select’ (red arrow #2), the Model browser appears as shown below, displaying the attributes for the selected feature class “Gene”.
+After clicking "Select" (red arrow #2), the Model browser appears as shown below, displaying the attributes for the selected feature class "Gene".
 
 ![Empty Model Browser Page](./images/fig10_querybuilder_modbrow_empty.png "Empty Model Browser Page")
 
 **Example 1.  Querying for protein-coding genes in Zm00001eb.1**
 
-In this example, the results are restricted to protein genes in the Zm00001eb.1 gene set.  Recall that there are two gene model sets for *Zea mays* in MaizeMine v1.4: Zm00001eb.1 and the latest release from RefSeq.  First click on the “Summary” tab for “Gene” in the Model Browser shown in the left panel of the figure above and then the “Constrain” tab (to right of “Summary”).  A “Constraint for Gene” box pops up as shown in the figure below. Check the box next to “Contained in list:” and select Zm00001eb.1 Genes from the dropdown.
+In this example, the results are restricted to protein genes in the Zm00001eb.1 gene set.  Recall that there are two gene model sets for *Zea mays* in MaizeMine v1.4: Zm00001eb.1 and the latest release from RefSeq.  First click on the "Summary" tab for "Gene" in the Model Browser shown in the left panel of the figure above and then the "Constrain" tab (to right of "Summary").  A "Constraint for Gene" box pops up as shown in the figure below. Check the box next to "Contained in list:" and select Zm00001eb.1 Genes from the dropdown.
 
 ![Constraining the search to all Zm00001eb.1 Genes](./images/fig11_querybuilder_constrain_biotypeV3.png "Constraining a search to all Zm00001eb.1 Genes") 
 
-Then click “Add to query”. Note that the “Query Overview” section has been updated to reflect the selected attributes and query constraint. The “Summary” tab for Genes automatically adds the Gene attributes DB Identifier, Source, Biotype, Symbol, and Name, along with the Organism name and Chromosome assembly linked to the genes. At the top of the Query Overview , “IN Zea mays all Zm00001eb.1 genes” appears just below “Gene” as a constraint for this query. Next click on the “Constrain” tab for “Biotype” and select “protein_coding” from the dropdown as shown in the figure below. 
+Then click "Add to query". Note that the "Query Overview" section has been updated to reflect the selected attributes and query constraint. The "Summary" tab for Genes automatically adds the Gene attributes DB Identifier, Source, Biotype, Symbol, and Name, along with the Organism name and Chromosome assembly linked to the genes. At the top of the Query Overview , "IN Zea mays all Zm00001eb.1 genes" appears just below "Gene" as a constraint for this query. Next click on the "Constrain" tab for "Biotype" and select "protein_coding" from the dropdown as shown in the figure below. 
 
 ![Restricting the search to protein-coding genes](./images/fig12_querybuilder_constrain_protein.png "Restricting the search to protein-coding genes")
 
-Constraining the query to “protein_coding” filters the results to only high quality protein-coding gene models from Zm00001eb.1.  Click on “Add to query”.  The Model Browser should resemble the image below.
+Constraining the query to "protein_coding" filters the results to only high quality protein-coding gene models from Zm00001eb.1.  Click on "Add to query".  The Model Browser should resemble the image below.
 
 ![Model Browser showing the current query](./images/fig13_querybuilder_modbrow_allv3.png "Model Browser showing the current query")
 
-Finally, clicking on “Show results” returns a table of 39,756 genes that have the status “protein_coding” as shown below:
+Finally, clicking on "Show results" returns a table of 39,756 genes that have the status "protein_coding" as shown below:
 
 ![Query Results](./images/fig14a_querybuilder_v3_allproteins_results.png "Query Results")
 
@@ -116,11 +116,11 @@ Note that when viewing the results table, it is possible to return to the Query 
 
 ![Query link to return to Query Builder](./images/fig14c_querybuilder_v3_allproteins_results.png "Query link to return to Query Builder")
 
-Back in the Query Builder interface, begin by clicking the &#x002B; (plus sign) next to “Chromosome” to expand the Chromosome feature class (red arrow #1) and then select “summary” (red arrow #2).  Be sure to use the “Chromosome” feature class and not the “Chromosome Location” feature class that is located lower on the model browser.  
+Back in the Query Builder interface, begin by clicking the &#x002B; (plus sign) next to "Chromosome" to expand the Chromosome feature class (red arrow #1) and then select "summary" (red arrow #2).  Be sure to use the "Chromosome" feature class and not the "Chromosome Location" feature class that is located lower on the model browser.  
 
 ![Restricting a search to a specific chromosome](./images/fig15a_modbrows_constrain_chr1.png "Restricting a search to a specific chromosome")
 
-Next, click “Constrain” next to the “DB identifier” attribute (red arrow #3). In the constraint pop up box, select “=” from the drop-down and enter “chr1” into the text field; then click “Add to Query”. 
+Next, click "Constrain" next to the "DB identifier" attribute (red arrow #3). In the constraint pop up box, select "=" from the drop-down and enter "chr1" into the text field; then click "Add to Query". 
 
 ![Chromosome identifier constraint pop up](./images/fig15b_modbrows_constrain_chr1.png "Chromosome identifier constraint pop up")
 
@@ -128,15 +128,15 @@ The Query Overview in the panel on the right side should resemble the one in the
 
 ![Query overview for example 2](./images/fig15c_modbrows_constrain_chr1.png "Query overview for example 2")
 
-It is also possible to restrict the query to a subset of coordinates on chr1. In this situation, the “Chromosome Location” feature class would be expanded to reveal the attributes “Start Integers” and “End Integers”, and the desired coordinates would be entered after clicking the “Constrain” tab next to each attribute (similar to the previous step of constraining the chromosome identifier). It is worth noting that there might be easier ways to do this using the “Genomic Regions Search”, which will be described later.
+It is also possible to restrict the query to a subset of coordinates on chr1. In this situation, the "Chromosome Location" feature class would be expanded to reveal the attributes "Start Integers" and "End Integers", and the desired coordinates would be entered after clicking the "Constrain" tab next to each attribute (similar to the previous step of constraining the chromosome identifier). It is worth noting that there might be easier ways to do this using the "Genomic Regions Search", which will be described later.
 
-Clicking “Show Results” returns a table of 5,892 protein-coding genes on chromosome 1 as shown below.
+Clicking "Show Results" returns a table of 5,892 protein-coding genes on chromosome 1 as shown below.
 
 ![Query Results for protein-coding Genes on Chromosome 1](./images/fig16_querybuilder_results_chr1.png "Query Results for protein-coding Genes on Chromosome 1")
 
 **3. Example 3: Querying for exon information in protein-coding genes** 
 
-The above results may be customized even further by configuring the query to show all of the exons and their lengths for each Gene as shown in the figure below.  Expand the “Exon” feature class (red arrow #1) and select “Show” next to the “DB identifier” and “Length” attributes (red arrows #2 and #3).
+The above results may be customized even further by configuring the query to show all of the exons and their lengths for each Gene as shown in the figure below.  Expand the "Exon" feature class (red arrow #1) and select "Show" next to the "DB identifier" and "Length" attributes (red arrows #2 and #3).
 
 ![Querying for Exon Information](./images/fig17_QueryBuilder_modbrow_Exon.png "Querying for Exon Information")
 
@@ -144,11 +144,11 @@ To make the output more visually pleasing, click on the blue square to the right
 
 ![Showing exons if present](./images/fig18_querybuilder_constrain_popup_showallexons.png "Show exons if present")
 
-Select “Show all Genes and show Exons if they are present” and click on “Add to query”.  This will group all of the exons together for each Gene in the results table (rather than displaying one exon per row). Now run the query to view the table of results as shown below.
+Select "Show all Genes and show Exons if they are present" and click on "Add to query".  This will group all of the exons together for each Gene in the results table (rather than displaying one exon per row). Now run the query to view the table of results as shown below.
 
 ![Showing all exons with popup closed](./images/fig19_querybuild_genelist_Exons_closed.png "showing all exons with popup closed")
 
-There are 5,892 genes on Chromosome 1 and the Zm00001eb000010 gene model has nine exons. Click on the “9 exons” text to expand the table with additional rows describing the length and DB identifier for each of the nine exons as shown in the figure below.
+There are 5,892 genes on Chromosome 1 and the Zm00001eb000010 gene model has nine exons. Click on the "9 exons" text to expand the table with additional rows describing the length and DB identifier for each of the nine exons as shown in the figure below.
 
 ![Showing exons with popup open](./images/fig20_querybuild_genelist_Exons_open.png "Showing exons with popup open")
 
@@ -156,11 +156,11 @@ There are 5,892 genes on Chromosome 1 and the Zm00001eb000010 gene model has nin
 
 Every class (e.g., Gene, Protein, Exon) in MaizeMine has a report page; the layout of the report page depends on the data available for a given query. There are several ways to access a report page for a class: one method is to click on an the blue links in the results table after running or query, another is to simply search for an identifier using the Quick Search as described above and click on one of the search results.
 
-Using the example of “Zm00001eb000580”, the report and summary section for this gene is shown below.
+Using the example of "Zm00001eb000580", the report and summary section for this gene is shown below.
 
 ![Report Page Summary](./images/fig21_reportsummary.png "Report Page Summary")
 
-The report page provides a complete description for gene Zm00001eb000580. The DB identifier and organism name are displayed in the header. The “Biotype” indicates the type of gene, in this case a protein-coding gene. Other possible values are:
+The report page provides a complete description for gene Zm00001eb000580. The DB identifier and organism name are displayed in the header. The "Biotype" indicates the type of gene, in this case a protein-coding gene. Other possible values are:
 
 · non_coding – non-coding gene
 
@@ -226,13 +226,13 @@ The Genomic Regions Search, shown in the figure below, is a tool to fetch featur
 
 The coordinates must be of the format:
 
-chr#:start..end (e.g. chr3:114909387..117230788 or chr3:114,909,387..117,230,788)
+``chr#:start..end`` (e.g. ``chr3:114909387..117230788`` or ``chr3:114,909,387..117,230,788``)
 
 OR
 
-chr#:start-end (e.g. chr3:114909387-117230788 or chr3:114,909,387-117,230,788)
+``chr#:start-end`` (e.g. ``chr3:114909387-117230788`` or ``chr3:114,909,387-117,230,788``)
 
-Click on one of the “example for input format” links for a representative set of genomic coordinates in that format.  It is also possible to upload a file with a list of coordinates.
+Click on one of the "example for input format" links for a representative set of genomic coordinates in that format.  It is also possible to upload a file with a list of coordinates.
 
 The Genomic Regions Search page in MaizeMine supports a wide variety of genomic feature types.  Since some of the features (e.g., SNPs) are very common in the genome, searching for these features within a large genomic region(s) can take a long time to run the query.  In these cases, it is advised to keep genomic search intervals as small as possible to accomplish the search.  Users can initiate the search process by choosing the features of interest and entering a set of coordinates in one of the accepted formats.  Optionally, the regions on either side of the genomic coordinates may be extended using the slider or by entering the amount manually using the text box.  This is a useful feature, as many times the genomic search interval is approximate (e.g., genetic mapping) and a margin of error is needed.  Users may also select the type of coordinate system they would like to use: base coordinate or interbase coordinate.
 
@@ -246,13 +246,13 @@ The results page for the Genomic Regions search gives a list of features that ar
 
 ![Results for Genomic Regions Search](./images/fig28_regions_results.png "Results for Genomic Regions Search")
 
-To create a list of particular features from the result page, filter based on feature type (shown in the red box in the above figure) and click “Go”.
+To create a list of particular features from the result page, filter based on feature type (shown in the red box in the above figure) and click "Go".
 
 ## **Lists**
 
-Users may create and save lists of features, such as gene IDs, transcript IDs, gene symbols, etc. The list tool searches the database and will attempt to convert the identifiers to the type selected in the list “Select Type” option.
+Users may create and save lists of features, such as gene IDs, transcript IDs, gene symbols, etc. The list tool searches the database and will attempt to convert the identifiers to the type selected in the list "Select Type" option.
 
-Click on the “Click to see an example” text to load the example list of gene models into the search box and then click on “Create List”.
+Click on the "Click to see an example" text to load the example list of gene models into the search box and then click on "Create List".
 
 ![Create List Example](./images/fig29_List_Tool.png "Create List Example")
 
@@ -260,15 +260,15 @@ The list tool performs a lookup of the identifiers and retrieves the results. If
 
 ![Choosing a Name for a List](./images/fig30_List_Tool_name.png "Choosing a Name for a List")
 
-Be sure to chose a name that accurately describes the contents of the new list, as over time a large number of lists may be accumulated in the “My Mine” section, and an accurate and detailed name prevents confusion when trying to retrieve lists for additional analysis.
+Be sure to chose a name that accurately describes the contents of the new list, as over time a large number of lists may be accumulated in the "My Mine" section, and an accurate and detailed name prevents confusion when trying to retrieve lists for additional analysis.
 
-Once the list has been named, click on the green “Save a List of 7 genes” button. A “List Analysis” page is presented that contains widgets (listed below) allowing users to perform analyses on the genes in the list that they have created.
+Once the list has been named, click on the green "Save a List of 7 genes" button. A "List Analysis" page is presented that contains widgets (listed below) allowing users to perform analyses on the genes in the list that they have created.
 
 ![List Creation Results](./images/fig31_List_Results.png "List Creation Results")
 
 **Available widgets**
 
-Before using any of the widgets, please read the notes under “Important Notes for Enrichment Widgets to avoid false positives.”
+Before using any of the widgets, please read the notes under "Important Notes for Enrichment Widgets to avoid false positives."
 
 1. Gene Ontology Enrichment
 2. Publication Enrichment
@@ -283,13 +283,13 @@ MyMine serves as a password-protected portal for users to manage their lists, qu
 1. Lists – lists saved by the user.
 2. History – a list of most recent queries performed by the user.
 3. Queries - all queries saved by the user
-4. Templates – templates created by the user or existing templates that are marked as “favorite” by the user.
-5. Password change – password management for the user’s account.
+4. Templates – templates created by the user or existing templates that are marked as "favorite" by the user.
+5. Password change – password management for the user"s account.
 6. Account Details - account information and personal preferences.
 
 ## **API**
 
-An API is available for users who would like to programmatically access MaizeMine.  Perl, Python, Ruby, and Java are the languages supported by the InterMine API.  For more information on the details of the API visit the [Intermine website](http://intermine.org/)
+An API is available for users who would like to programmatically access MaizeMine.  Perl, Python, Ruby, and Java are the languages supported by the InterMine API.  For more information on the details of the API visit the [Intermine website](http://intermine.org/).
 
 ![API Access](./images/fig33_api.png "API Access")
 
