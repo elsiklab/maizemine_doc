@@ -4,7 +4,7 @@
 # Welcome to MaizeMine 
 ![Menu Bar](./images/fig1_homepage_main_menu_bar.png "Menu Bar")
 MaizeMine is powered by InterMine and provides a user-friendly way to access genomic, proteomic, interaction and literature data for the important crop plant *Zea mays*. MaizeMine is a part of the [Maize Genetics and Genomics Database](www.MaizeGDB.org) which is supported by the USDA-ARS.  This tutorial is focused on giving users an introduction to the different parts of MaizeMine and how users can fully leverage MaizeMine.  The latest MaizeMine release supports the Zm-B73-REFERENCE-NAM-5.0 genome assembly of the maize B73 reference genome and the Zm00001eb.1 and RefSeq gene sets.  We anticipate adding additional updated B73 assemblies as they become available.
-> Link to the MaizeMine Homepage: http://maizemine.maizegdb.org 
+> Link to the MaizeMine Homepage: [http://maizemine.maizegdb.org](http://maizemine.maizegdb.org)
 > 
 
 ## Overview of MaizeMine
