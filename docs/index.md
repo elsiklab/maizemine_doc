@@ -3,7 +3,8 @@
 
 # Welcome to MaizeMine 
 ![Menu Bar](./images/fig1_homepage_main_menu_bar.png "Menu Bar")
-MaizeMine is powered by InterMine and provides a user-friendly way to access genomic, proteomic, interaction and literature data for the important crop plant *Zea mays*. MaizeMine is a part of the [Maize Genetics and Genomics Database](www.MaizeGDB.org) which is supported by the USDA-ARS.  This tutorial is focused on giving users an introduction to the different parts of MaizeMine and how users can fully leverage MaizeMine.  The latest MaizeMine release supports the Zm-B73-REFERENCE-NAM-5.0 genome assembly of the maize B73 reference genome and the Zm00001eb.1 and RefSeq gene sets.  We anticipate adding additional updated B73 assemblies as they become available.
+MaizeMine is powered by InterMine and provides a user-friendly way to access genomic, proteomic, interaction and literature data for the important crop plant *Zea mays*. MaizeMine is a part of the [Maize Genetics and Genomics Database](www.MaizeGDB.org) which is supported by the USDA-ARS.  This tutorial is focused on giving users an introduction to the different parts of MaizeMine and how users can fully leverage MaizeMine.  The latest MaizeMine release integrates the *Zea mays* Zm-B73-REFERENCE-NAM-5.0 genome assembly and genome assemblies of 25 other NAM founder lines with annotation data sets.
+
 > Link to the MaizeMine Homepage: [http://maizemine.maizegdb.org](http://maizemine.maizegdb.org)
 > 
 
@@ -24,7 +25,7 @@ _Regions_ – a Genomic Region Search page where users can enter genomic coordin
 
 _Data sources_ – a page where all data sources, their links and the date of download is specified in a tabulated format.
 
-_Help_- a page for guidance, when working through MaizeMine. 
+_Help_ - a page for guidance, when working through MaizeMine. 
 
 _API_ – a page where users can discover more about the InterMine API to programmatically access MaizeMine.
 
@@ -42,7 +43,7 @@ The "Quick Search" enables users to search keywords from any of the datasets in 
 
 The results page is tabulated below and shows a summary of the query.
 
-![Search Results](./images/fig3_Quick_Serach_bz1_results.png "Search Results")
+![Search Results](./images/fig3_Quick_Search_bz1_results.png "Search Results")
 
 The results may be filtered based on "Category" or "Organism" (red box). The score column in the result table indicates the similarity of the query to the result fetched by MaizeMine.
 
@@ -88,9 +89,9 @@ After clicking "Select" (red arrow #2), the Model browser appears as shown below
 
 **Example 1.  Querying for protein-coding genes in Zm00001eb.1**
 
-In this example, the results are restricted to protein genes in the Zm00001eb.1 gene set.  Recall that there are two gene model sets for *Zea mays* in MaizeMine v1.4: Zm00001eb.1 and the latest release from RefSeq.  First click on the "Summary" tab for "Gene" in the Model Browser shown in the left panel of the figure above and then the "Constrain" tab (to right of "Summary").  A "Constraint for Gene" box pops up as shown in the figure below. Check the box next to "Contained in list:" and select Zm00001eb.1 Genes from the dropdown.
+In this example, the results are restricted to protein genes in the Zm00001eb.1 gene set. First click on the "Summary" tab for "Gene" in the Model Browser shown in the left panel of the figure above and then the "Constrain" tab (to right of "Summary").  A "Constraint for Gene" box pops up as shown in the figure below. Check the box next to "Contained in list:" and select Zm00001eb.1 Genes from the dropdown.
 
-![Constraining the search to all Zm00001eb.1 Genes](./images/fig11_querybuilder_constrain_biotypeV3.png "Constraining a search to all Zm00001eb.1 Genes") 
+![Constraining the search to all Zm00001eb.1 Genes](./images/fig11_querybuilder_constrain_biotypeV5.png "Constraining a search to all Zm00001eb.1 Genes") 
 
 Then click "Add to query". Note that the "Query Overview" section has been updated to reflect the selected attributes and query constraint. The "Summary" tab for Genes automatically adds the Gene attributes DB Identifier, Source, Biotype, Symbol, and Name, along with the Organism name and Chromosome assembly linked to the genes. At the top of the Query Overview , "IN Zea mays all Zm00001eb.1 genes" appears just below "Gene" as a constraint for this query. Next click on the "Constrain" tab for "Biotype" and select "protein_coding" from the dropdown as shown in the figure below. 
 
@@ -98,15 +99,11 @@ Then click "Add to query". Note that the "Query Overview" section has been updat
 
 Constraining the query to "protein_coding" filters the results to only high quality protein-coding gene models from Zm00001eb.1.  Click on "Add to query".  The Model Browser should resemble the image below.
 
-![Model Browser showing the current query](./images/fig13_querybuilder_modbrow_allv3.png "Model Browser showing the current query")
+![Model Browser showing the current query](./images/fig13_querybuilder_modbrow_allv5.png "Model Browser showing the current query")
 
 Finally, clicking on "Show results" returns a table of 39,756 genes that have the status "protein_coding" as shown below:
 
-![Query Results](./images/fig14a_querybuilder_v3_allproteins_results.png "Query Results")
-
-Since there are no values in the Symbol or Name columns, these may be removed from the results table by clicking on the **&#215;** icon above the columns. The table then appears as shown below.
-
-![Query Results with columns removed](./images/fig14b_querybuilder_v3_allproteins_results.png "Query Results with columns removed")
+![Query Results](./images/fig14a_querybuilder_v5_allproteins_results.png "Query Results")
 
 **Example 2. Querying for protein-coding genes on a particular chromosome** 
 
@@ -114,13 +111,13 @@ This next example builds on the above query by adding another constraint to limi
 
 Note that when viewing the results table, it is possible to return to the Query Builder for that query by clicking the Query link just above the table (red arrow in figure below). This allows users to easily modify their queries without having to repeat the steps of setting up the query each time.
 
-![Query link to return to Query Builder](./images/fig14c_querybuilder_v3_allproteins_results.png "Query link to return to Query Builder")
+![Query link to return to Query Builder](./images/fig14b_querybuilder_v5_allproteins_results.png "Query link to return to Query Builder")
 
 Back in the Query Builder interface, begin by clicking the &#x002B; (plus sign) next to "Chromosome" to expand the Chromosome feature class (red arrow #1) and then select "summary" (red arrow #2).  Be sure to use the "Chromosome" feature class and not the "Chromosome Location" feature class that is located lower on the model browser.  
 
 ![Restricting a search to a specific chromosome](./images/fig15a_modbrows_constrain_chr1.png "Restricting a search to a specific chromosome")
 
-Next, click "Constrain" next to the "DB identifier" attribute (red arrow #3). In the constraint pop up box, select "=" from the drop-down and enter "chr1" into the text field; then click "Add to Query". 
+Next, click "Constrain" next to the "Chromosome ID" attribute (red arrow #3). In the constraint pop up box, select "=" from the drop-down and enter "chr1" into the text field; then click "Add to Query". 
 
 ![Chromosome identifier constraint pop up](./images/fig15b_modbrows_constrain_chr1.png "Chromosome identifier constraint pop up")
 
@@ -186,7 +183,7 @@ The Summary section of the report page provides a summary about the gene such as
 
 **Alias and DBxref:**
 
-The Alias and DBxref section provides aliases (if any) and cross references to other gene model sets or assemblies.  The current release of MaizeMine has gene models for the latest B73 assembly and the latest RefSeq gene models.
+The Alias and DBxref section provides aliases (if any) and cross references to other gene model sets or assemblies.
 
 ![DBxref section of reports page](./images/fig22_reportsummary_Dbxref.png "DBxref section of the reports page")
 
@@ -234,7 +231,7 @@ OR
 
 Click on one of the "example for input format" links for a representative set of genomic coordinates in that format.  It is also possible to upload a file with a list of coordinates.
 
-The Genomic Regions Search page in MaizeMine supports a wide variety of genomic feature types.  Since some of the features (e.g., SNPs) are very common in the genome, searching for these features within a large genomic region(s) can take a long time to run the query.  In these cases, it is advised to keep genomic search intervals as small as possible to accomplish the search.  Users can initiate the search process by choosing the features of interest and entering a set of coordinates in one of the accepted formats.  Optionally, the regions on either side of the genomic coordinates may be extended using the slider or by entering the amount manually using the text box.  This is a useful feature, as many times the genomic search interval is approximate (e.g., genetic mapping) and a margin of error is needed.  Users may also select the type of coordinate system they would like to use: base coordinate or interbase coordinate.
+The Genomic Regions Search page in MaizeMine supports a wide variety of genomic feature types.  Since some of the features (e.g., SNVs) are very common in the genome, searching for these features within a large genomic region(s) can take a long time to run the query.  In these cases, it is advised to keep genomic search intervals as small as possible to accomplish the search.  Users can initiate the search process by choosing the features of interest and entering a set of coordinates in one of the accepted formats.  Optionally, the regions on either side of the genomic coordinates may be extended using the slider or by entering the amount manually using the text box.  This is a useful feature, as many times the genomic search interval is approximate (e.g., genetic mapping) and a margin of error is needed.  Users may also select the type of coordinate system they would like to use: base coordinate or interbase coordinate.
 
 ![Start page for Regions Search](./images/fig26_regions_search.png "Start page for Regions Search")
 
@@ -301,4 +298,4 @@ The Data Sources page provides a description of the datasets that are integrated
 
 ----------
 
-© Copyright 2021, Jack Gardiner, Justin Le Tourneau, Md Shamimuzzaman, Aditi Tayal, Deepak Unni, Colin Diesh, Chris Elsik, Darren Hagen.
+© Copyright 2022, Jack Gardiner, Justin Le Tourneau, Md Shamimuzzaman, Aditi Tayal, Deepak Unni, Colin Diesh, Chris Elsik, Darren Hagen.
