@@ -1,4 +1,5 @@
 site_name: MaizeMine Documentation
 repo_url: https://github.com/elsiklab/maizemine_doc
+docs_dir: 'docs'
 pages:
 - ['index.md', 'Introduction']
