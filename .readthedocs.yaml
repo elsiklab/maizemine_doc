@@ -1,4 +1,4 @@
-# .readthedocs.yml
+# .readthedocs.yaml
 
 # Required
 version: 1
@@ -13,6 +13,4 @@ mkdocs:
 
 # Optionally build your docs in additional formats such as PDF and ePub
 formats:
-  - htmlzip
   - pdf
-  - epub
