@@ -45,7 +45,7 @@ The results page is tabulated below and shows a summary of the query.
 
 ![Search Results](./images/fig3_Quick_Search_bz1_results.png "Search Results")
 
-The results may be filtered based on "Category" or "Organism" (red box). The score column in the result table indicates the similarity of the query to the result fetched by MaizeMine.
+The results may be filtered based on "Category", "Assembly", or "Organism" (red box). The score column in the result table indicates the similarity of the query to the result fetched by MaizeMine.
 
 The results page can also be converted to a list. To enable this feature click on "Gene" in "Hits by Category" section marked with a red box.
 
@@ -61,7 +61,7 @@ In addition to the Quick Search box, users can make use of templates which are p
 To utilize this template, which is shown in the figure below, users only need to enter the gene model name (DB identifier) for their gene of interest and click the "Show Results" button.  In addition to information on gene expression, detailed information will be returned on the sample growth stage, organ group, and plant ontology (PO) terms.
 
 ![Gene Expression Search](./images/fig5_gene_expression_template.png "Gene Expression Search")
-The result page returns gene expression values in FPKP for 91 tissues. The layout of the results table may be customized by clicking on "Manage Columns" (Box 1). Users may generate the code for the query in Perl, Python, Java, Ruby, JavaScript or XML (Box 2). The search results can be downloaded by clicking on "Export" (Box 3). The format options for the results download file are tab-separated (.tsv), comma-separated values (.csv), XML, or JSON.  Additionally, if the results are genomic features, then the results can be downloaded in GFF3 and BED format as well.
+The result page returns gene expression values in FPKM for 115 tissues. The layout of the results table may be customized by clicking on "Manage Columns" (Box 1). Users may generate the code for the query in Perl, Python, Java, Ruby, JavaScript or XML (Box 2). The search results can be downloaded by clicking on "Export" (Box 3). The format options for the results download file are tab-separated (.tsv), comma-separated values (.csv), XML, or JSON.  Additionally, if the results are genomic features, then the results can be downloaded in GFF3 and BED format as well.
 
 ![Gene Expression Search Results](./images/fig6_gene_expression_template_results.png "Gene Expression Search Results")
 
@@ -93,7 +93,7 @@ In this example, the results are restricted to protein genes in the Zm00001eb.1 
 
 ![Constraining the search to all Zm00001eb.1 Genes](./images/fig11_querybuilder_constrain_biotypeV5.png "Constraining a search to all Zm00001eb.1 Genes") 
 
-Then click "Add to query". Note that the "Query Overview" section has been updated to reflect the selected attributes and query constraint. The "Summary" tab for Genes automatically adds the Gene attributes DB Identifier, Source, Biotype, Symbol, and Name, along with the Organism name and Chromosome assembly linked to the genes. At the top of the Query Overview , "IN Zea mays all Zm00001eb.1 genes" appears just below "Gene" as a constraint for this query. Next click on the "Constrain" tab for "Biotype" and select "protein_coding" from the dropdown as shown in the figure below. 
+Then click "Add to query". Note that the "Query Overview" section has been updated to reflect the selected attributes and query constraint. The "Summary" tab for Genes automatically adds the Gene attributes DB Identifier, Source, Biotype, Symbol, and Name, along with the Organism name and Chromosome assembly linked to the genes. At the top of the Query Overview , "IN B73 Zm00001eb.1 all genes" appears just below "Gene" as a constraint for this query. Next click on the "Constrain" tab for "Biotype" and select "protein_coding" from the dropdown as shown in the figure below. 
 
 ![Restricting the search to protein-coding genes](./images/fig12_querybuilder_constrain_protein.png "Restricting the search to protein-coding genes")
 
@@ -223,11 +223,15 @@ The Genomic Regions Search, shown in the figure below, is a tool to fetch featur
 
 The coordinates must be of the format:
 
-``chr#:start..end`` (e.g. ``chr3:114909387..117230788`` or ``chr3:114,909,387..117,230,788``)
+``chr#:start..end`` (e.g., ``chr1:29733..37349``) 
 
 OR
 
-``chr#:start-end`` (e.g. ``chr3:114909387-117230788`` or ``chr3:114,909,387-117,230,788``)
+``chr#:start-end`` (e.g., ``chr1:29733-37349``)
+
+OR
+
+``chr#:start	end`` (tab delimited, e.g., ``chr1	29733	37349``)
 
 Click on one of the "example for input format" links for a representative set of genomic coordinates in that format.  It is also possible to upload a file with a list of coordinates.
 
@@ -288,6 +292,8 @@ MyMine serves as a password-protected portal for users to manage their lists, qu
 
 An API is available for users who would like to programmatically access MaizeMine.  Perl, Python, Ruby, and Java are the languages supported by the InterMine API.  For more information on the details of the API visit the [Intermine website](http://intermine.org/).
 
+Additionally, some Python examples using the MaizeMine API are available in the [intermine-api-python-examples](https://github.com/elsiklab/intermine-api-python-examples/tree/main/maizemine) repository on GitHub.
+
 ![API Access](./images/fig33_api.png "API Access")
 
 ## **Data Sources**
@@ -298,4 +304,4 @@ The Data Sources page provides a description of the datasets that are integrated
 
 ----------
 
-© Copyright 2022, Jack Gardiner, Justin Le Tourneau, Md Shamimuzzaman, Aditi Tayal, Deepak Unni, Colin Diesh, Chris Elsik, Darren Hagen.
+© Copyright 2024, Elsik lab.
